@@ -17,6 +17,13 @@ function App() {
         <option value="light"> Light </option>
         <option value="dark"> Dark </option>
       </select>
+
+      <div>
+        <WeatherWidget city="Miami" icon="🟡" unit={unit} celsius={29} />
+        <WeatherWidget city="Mexico City" icon="⛈️" unit={unit} celsius={17} />
+        <WeatherWidget city="Berlin" icon="🌥️" unit={unit} celsius={20} />
+        <WeatherWidget city="Barcelona" icon="🌤️" unit={unit} celsius={28} />
+      </div>
     </div>
   );
 }
