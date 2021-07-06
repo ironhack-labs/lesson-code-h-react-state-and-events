@@ -4,8 +4,8 @@ import { useState } from "react";
 function App() {
   const [theme, setTheme] = useState("light");
 
-  const toggleTheme = (e) => {
-    setTheme(e.target.value);
+  const toggleTheme = (event) => {
+    setTheme(event.target.value);
   };
 
   return (
