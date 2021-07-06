@@ -7,8 +7,7 @@ function App() {
   const [unit, setUnit] = useState("C");
 
   const toggleTheme = (event) => {
-    const value = event.target.value; // value -->  'light' || 'dark'
-    setTheme(value);
+    setTheme(event.target.value); // value -->  "light" || "dark"
   };
 
   return (
