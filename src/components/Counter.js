@@ -8,7 +8,7 @@ function Counter() {
     <div className="Counter">
       <h2>Counter</h2>
 
-      <p>You clicked 0 times</p>
+      <p>You clicked {count} times</p>
 
       <button> - </button>
       <button> + </button>
