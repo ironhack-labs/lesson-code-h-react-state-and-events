@@ -5,7 +5,9 @@ function App() {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = (event) => {
-    setTheme(event.target.value);
+    // setTheme(event.target.value);  //  <-- COMMENT THE PREVIOUS CODE
+
+    theme = event.target.value; // ❌  WRONG!!
   };
 
   return (
