@@ -1,9 +1,11 @@
 import Counter from "./components/Counter";
 import { useState } from "react";
-import WeatherWidget from "./components/WeatherWidget";
 
 function App() {
   const [theme, setTheme] = useState("light");
+
+  // Declare a new state variable named "unit"
+  // Set the initial value to "C" for Celsius
   const [unit, setUnit] = useState("C");
 
   const toggleTheme = (event) => {
@@ -20,12 +22,10 @@ function App() {
         <option value="dark"> Dark </option>
       </select>
 
+      {/* ADD THE BUTTONS FOR CHANGING THE TEMP. UNIT */}
+
       <button onClick={() => setUnit("C")}> °C </button>
       <button onClick={() => setUnit("F")}> °F </button>
-
-      <div>
-        <WeatherWidget city="Miami" icon="🟡" celsius={29} />
-      </div>
     </div>
   );
 }
