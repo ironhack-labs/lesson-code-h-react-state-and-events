@@ -26,6 +26,9 @@ function App() {
 
       <div>
         <WeatherWidget city="Miami" icon="🟡" celsius={29} unit={unit} />
+        <WeatherWidget city="Mexico City" icon="⛈️" celsius={17} unit={unit} />
+        <WeatherWidget city="Berlin" icon="🌥️" celsius={20} unit={unit} />
+        <WeatherWidget city="Barcelona" icon="🌤️" celsius={28} unit={unit} />
       </div>
     </div>
   );
