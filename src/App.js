@@ -1,5 +1,6 @@
 import Counter from "./components/Counter";
 import { useState } from "react";
+
 import WeatherWidget from "./components/WeatherWidget";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
       <button onClick={() => setUnit("F")}> °F </button>
 
       <div>
-        <WeatherWidget city="Miami" icon="🟡" celsius={29} />
+        <WeatherWidget city="Miami" icon="🟡" celsius={29} unit={unit} />
       </div>
     </div>
   );
