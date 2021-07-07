@@ -1,9 +1,13 @@
 function WeatherWidget(props) {
   let temperature = props.celsius;
-  if (props.unit === "F") temperature = temperature * 1.8 + 32;
+  const unitIsFahrenheit = props.unit === "F";
+
+  if (unitIsFahrenheit) {
+    temperature = props.celsius * 1.8 + 32;
+  }
 
   return (
-    <div className={"WeatherWidget " + props.theme}>
+    <div className="WeatherWidget">
       <span>{props.icon}</span>
       <h3>{props.city}</h3>
       <h2>
